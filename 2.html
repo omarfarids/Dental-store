@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dental-Store</title>
+    <meta name="description" content="This is an Online dental Store">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500;600&family=Inter:wght@400;700&family=Karla:wght@400;500;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Open+Sans:wght@400;600;700&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+</head>
+
+<body>
+    <header class="flex-row">
+        <h1>D. Shop</h1>
+        <div>
+            <a href="#">Careers</a>
+            <a href="#">Help</a>
+            <a href="#">Contact us</a>
+        </div>
+    </header>
+    <nav class="flex-row">
+        <div>
+            <a class="centered" href="#"> &#9776; Categories</a>
+            <a class="centered" href="#">Home</a>
+        </div>
+        <div class="flex-row">
+            <span>&#x1f6d2;
+                <div id="cart">
+                    <p>empty</p>
+                </div>
+            </span>
+            <form>
+                <input type="search" placeholder="Search" name="search">
+            </form>
+        </div>
+    </nav>
+    <aside>
+        <ul>
+            <a href="eq.html">
+                <li style="border-top: 1px solid transparent;">Equipments</li>
+            </a>
+            <a href="eq.html">
+                <li>Basics</li>
+            </a>
+            <a href="projects/Dental-Store/Endodontics.html">
+                <li>Endodontics</li>
+            </a>
+            <a href="projects/Dental-Store/P&S.html">
+                <li>Perio & Surgery</li>
+            </a>
+            <a href="projects/Dental-Store/implant.html">
+                <li>Implant</li>
+            </a>
+            <a href="projects/Dental-Store/orthodontic.html">
+                <li>Orthodontic</li>
+            </a>
+            <a href="projects/Dental-Store/orthodontic.html">
+                <li>Instruments</li>
+            </a>
+            <a href="projects/Dental-Store/Restorvative.html">
+                <li>Restorvative</li>
+            </a>
+            <a href="projects/Dental-Store/Dental Lab.html">
+                <li>Dental Lab</li>
+            </a>
+        </ul>
+    </aside>
+    <main>
+        <section>
+            <img src="images/Dental-unit.jpg" alt="dental unit">
+            <div class="flex-column">
+                <h1 id="dental">Dental unit</h1>
+                <p><b>30,000EGP</b></p>
+                <form action="">
+                    <input type="number" value="1" style="width: 30px;border-radius: 4px;border-style:groove;">
+                </form>
+                <br>
+                <button class="dental" href="test" onclick="addToCart()">Add to cart</button>
+            </div>
+
+        </section>
+        <section>
+            <img src="images/Endo.jpg" alt="Endodontic device">
+            <div class="flex-column">
+                <h1 id="endo">Endo A plus</h1>
+                <p><b>10800EGP</b></p>
+                <form action="">
+                    <input type="number" value="1" style="width: 30px;border-radius: 4px;border-style:groove;">
+                </form>
+                <br>
+                <button class="endo" href="test" onclick="addToCart()">Add to cart</button>
+            </div>
+        </section>
+        <section>
+            <img src="images/teeth-dental-equipment.jpg" alt="Endodontic device">
+            <div class="flex-column">
+                <h1 id="equipments">Dental Equipments</h1>
+                <p><b>13000EGP</b></p>
+                <form action="">
+                    <input type="number" value="1" style="width: 30px;border-radius: 4px;border-style:groove;">
+                </form>
+                <br>
+                
+                <button class="equipments" href="test" onclick="addToCart()">Add to cart</button>
+            </div>
+        </section>
+        <section>
+            <img src="images/crystal-teeth.jpg" alt="Endodontic device">
+            <div class="flex-column">
+                <h1 id="crystal">Crystal Teeth Light Cure Xpress</h1>
+                <p><b>34000EGP</b></p>
+                <form action="">
+                    <input type="number" value="1" style="width: 30px;border-radius: 4px;border-style:groove;">
+                </form>
+                <br>
+                <button class="crystal" href="test" onclick="addToCart()">Add to cart</button>
+            </div>
+        </section>
+        <div class="pages">
+            <a id="previous" href="#"><i class="fas fa-angle-double-left"></i></a>
+            <a href="index.html">1</a>
+            <a href="#" class="active">2</a>
+            <a href="3.html">3</a>
+            <a href="4.html">4</a>
+            <a href="5.html">5</a>
+            <a id="next" href="#"><i class="fas fa-angle-double-right"></i></a>
+        </div>
+    </main>
+    <div class="ads">
+        <img src="images/advertisement.jpg" alt="advertisement" >
+    </div>
+    <footer>
+        <div>
+            <h2>D.store</h2>
+            <p>Get All your Dental Supplies Now on DentaCarts delivered on time to your clinic's Door</p>
+        </div>
+        <form action="#" >
+            <input type="email" placeholder="Enter your Email">
+            <button id="submit">Subscribe</button>
+            <p id="validation"></p>
+        </form>
+        <div>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </div>
+        <ul>
+            <li><i class="fas fa-angle-double-right"></i>+023456789</li>
+            <li><i class="fas fa-angle-double-right"></i>+010000001</li>
+            <li><i class="fas fa-angle-double-right"></i>Address : 23Street - NasrElnoba - Aswan-Egypt</li>
+        </ul>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
